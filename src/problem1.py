@@ -2,8 +2,8 @@
 Exam 2, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Hunter Schoenborn.  October 2018.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -48,10 +48,10 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    # run_test_problem1a()
-    # run_test_problem1b()
-    # run_test_problem1c()
-    # run_test_problem1d()
+    run_test_problem1a()
+    run_test_problem1b()
+    run_test_problem1c()
+    run_test_problem1d()
 
 
 def run_test_problem1a():
@@ -221,6 +221,16 @@ def problem1a(strings):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    length = int
+    answer = []
+    for k in range(len(strings)):
+        word = strings[k]
+        for j in range(len(word)):
+            length = j
+        answer = word + length
+    return answer
+
 
 
 def run_test_problem1b():
@@ -394,7 +404,10 @@ def problem1b(strings):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(strings)):
+        word = k
+        if len(word) % 2 == 1:
+            return word
 
 def run_test_problem1c():
     """ Tests the   problem1c   function. """
@@ -591,6 +604,7 @@ def problem1c(strings):
     #          Tests have been written for you (above).
     # See  IMPORTANT  note before the DEF line of this function.
     # -------------------------------------------------------------------------
+    for k in range(len(strings)):
 
 
 def run_test_problem1d():
